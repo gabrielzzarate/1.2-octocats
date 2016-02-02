@@ -1,0 +1,115 @@
+/* BODY */
+
+img {
+  width: 100%;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* OCTOCAT IMAGES */
+
+.octocat {
+  display: inline-block;
+  margin-top: 25px;
+  margin-right: 13px;
+  margin-bottom: 13px;
+  width: 30%;
+  padding: 0;
+  border-bottom: 1px solid #ddd;
+}
+
+
+/* triangle from generator triangle.designyourcode.io */
+
+.octocat::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 7px 0 8px;
+  border-color: lightgray transparent transparent transparent;
+  position: relative;
+  left: 318px;
+  top: 3px;
+
+}
+
+.octocat img {
+  border: 1px solid #ddd;
+}
+
+/* footer */
+
+.authors {
+  float: right;
+  list-style: none;
+  display: inline-block;
+  padding: 0;
+  margin-left: 5px;
+}
+
+.image-caption {
+  font-family: Helvetica, Arial, sans-serif;
+  color: darkgray;
+  font-size: 13px;
+  font-weight: bold;
+  float: right;
+  display: inline;
+  margin: 0 0 10px 0;
+  position: relative;
+  top: 10px;
+
+
+}
+.image-footer img {
+  width: 25px;
+  display: inline;
+  border: none;
+  border-radius: 5px;
+  position: relative;
+  top: -4px;
+
+}
+
+.image-number {
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 13px;
+  float: left;
+  position: relative;
+  top: 10px;
+  color: lightgray;
+}
+
+.image-number::before {
+  content: "#";
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  text: bold;
+  position: relative;
+
+}
+
+/* queries */
+
+
+@media (max-width: 960px) {
+
+  li.octocat {
+    max-width: 45%;
+    margin-left: 23px;
+  }
+
+}
+@media (max-width: 600px) {
+  li.octocat {
+    float: left;          /* one column for tablets */
+    max-width: 90%;
+    margin: 10px auto;
+  }
